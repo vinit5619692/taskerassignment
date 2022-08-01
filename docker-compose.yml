@@ -1,0 +1,22 @@
+version: "3"
+services:
+  taskerdb:
+    build: ./db/
+    healthcheck:
+        test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+        timeout: 20s
+        retries: 10
+  taskerservice:
+    build: ./service/
+    ports:
+      - "7000:9000"
+    depends_on:
+      taskerdb:
+        condition: service_healthy
+  taskerui:
+    build: ./ui/
+    ports:
+      - "7001:8080"
+    depends_on:
+      - taskerservice
+  
