@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "0015ddaf-2fc6-44f5-886d-0488cebc3952",
+		"name": "taskerEndpointsNegativeCases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13344025"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    //400 because business policy is \"Past Dates are not allowed\"\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/task/post?body=22ew1e2~-~2021-03-25~-~undefined",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"task",
+						"post"
+					],
+					"query": [
+						{
+							"key": "body",
+							"value": "22ew1e2~-~2021-03-25~-~undefined"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

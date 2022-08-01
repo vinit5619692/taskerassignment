@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "3632d1f0-abfe-4dd1-857d-dc5145b6efbb",
+		"name": "taskerEndpointsPositiveCases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13344025"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"const responseJson = pm.response.json();\r",
+							"pm.environment.set(\"id\", responseJson.body.id);\r",
+							"pm.environment.set(\"taskCode\", responseJson.body.taskCode);\r",
+							"pm.environment.set(\"taskDate\", responseJson.body.taskDate);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/task/post?body=22aew1e2~-~2023-03-25~-~undefined",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"task",
+						"post"
+					],
+					"query": [
+						{
+							"key": "body",
+							"value": "22aew1e2~-~2023-03-25~-~undefined"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch With Tasks Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/task/{{id}}",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"task",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Tasks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/task",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// var body = {\r",
+							"// id: pm.environment.get('id'),\r",
+							"// taskCode: pm.environment.get('taskCode') + 'Updated',\r",
+							"// taskDate: pm.environment.get('taskDate'),\r",
+							"// };\r",
+							"// console.log(pm.environment.get('taskCode') + '-Updated');\r",
+							"// var body_str = JSON.stringify(body);\r",
+							"// console.log(body_str);\r",
+							"// pm.environment.set('updateRequestBody', body_str);\r",
+							"pm.environment.set('updateRequestBody', pm.environment.get('taskCode') + 'Updated' + '~-~' + pm.environment.get('taskDate') + '~-~' + pm.environment.get('id'));"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "body",
+						"value": "{{updateRequestBody}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/task/post?body={{updateRequestBody}}",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"task",
+						"post"
+					],
+					"query": [
+						{
+							"key": "body",
+							"value": "{{updateRequestBody}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete With Tasks Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/task/{{id}}",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"task",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
