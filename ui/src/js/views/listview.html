@@ -1,0 +1,113 @@
+<div class="demo-page oj-bg-body" id="listviewdiv" style="display: block;">
+    <div id="buttonset-container"  class="oj-flex-bar">
+        <oj-toolbar>
+                <oj-button id="addButton" :class="[[isSmall()? 'oj-button-sm oj-flex-bar-start': 'oj-button-lg oj-flex-bar-start']]" chroming="outlined" on-oj-action="[[addNewItem]]" label="[[isSmall()? 'Create': 'Create New Task']]">
+                </oj-button>               
+        </oj-toolbar> 
+    </div> 
+    <oj-bind-if test="[[mode() == 'view']]">
+        <oj-refresher id="refresher" refresh-content="[[refreshFunc]]"  text="Checking for updates"> 
+            <oj-list-view id="listviewViewMode" aria-label="To-Do list" data="[[dataProvider]]" on-oj-item-action="[[gotoContent]]" scroll-position="{{scrollPos}}"  class="demo-list-view-mode" scroll-policy-options.fetch-size="15">
+                <template slot="itemTemplate" data-oj-as="item">
+                    <li class="oj-swipeactions-container">
+                        <oj-swipe-actions on-oj-action="[[handleAction]]">
+                                <oj-list-item-layout style="cursor:pointer">
+                                    <span class="oj-typography-body-md oj-text-color-primary">
+                                        <oj-bind-text value="[[item.data.taskName]]"></oj-bind-text>         
+                                    </span>
+                                    <oj-avatar slot="leading" background="[['orange']]" size="xs"
+                                    icon-class="[['oj-ux-ico-task']]" role="img" aria-label="Circular icon with type icon" shape="circle">
+                                    </oj-avatar>                                    
+                                    <span slot="action" role="presentation" class="oj-sm-margin-2x-start oj-sm-align-items-flex-end oj-listview-drill-icon"></span>   
+                                    <span slot="tertiary" class="oj-line-clamp-2 oj-typography-body-xs oj-text-color-secondary">
+                                        <oj-bind-text value="[[item.data.dateCompleted]]"></oj-bind-text>  
+                                    </span>                                    
+                                </oj-list-item-layout> 
+                              <template slot="end">
+                                <oj-option class="oj-swipeactions-danger oj-swipeactions-default" value="trash">Delete
+                                    <span class="oj-ux-ico-trash" slot="startIcon"></span>
+                                </oj-option>
+                            </template>
+                        </oj-swipe-actions>
+                    </li>
+                </template>
+                <template slot="noData">
+                    <div class="oj-flex oj-sm-align-items-center demo-nodata-content">
+                        <div class="oj-flex oj-sm-align-items-center oj-sm-flex-direction-column demo-nodata-inner">
+                            <h5>There are no tasks!</h5>
+                        </div>
+                    </div>
+                </template>
+            </oj-list-view>
+        </oj-refresher>
+    </oj-bind-if>    
+</div>
+
+
+<!--edit start-->
+<div class="demo-page" id="editdiv" style="display: none;">
+    <h4>Task Detail</h4>
+    <oj-toolbar chroming="outlined">
+      <oj-button id="button" on-click="[[goBackFromEdit]]" class="oj-button-lg">
+          <span slot="startIcon" class="oj-fwk-icon-caret-start oj-fwk-icon"></span>Back
+      </oj-button>
+        <oj-button id="updateButton" class="oj-button-lg" on-oj-action="[[updateItem]]">Update</oj-button>
+        <oj-button id="removeButton" class="oj-button-lg" on-oj-action="[[deleteItem]]">Delete</oj-button>
+     </oj-toolbar>
+  
+    <div class="demo-panel">
+      
+      <oj-form-layout id="taskform" max-columns="2">        
+        <oj-input-text id = "editTaskName" label-hint="Task Description" value="{{edittaskName}}"
+        length.max="40"
+        length.count-by="codeUnit"
+        label-hint="Max 40 char allowed"
+        label-edge="inside"></oj-input-text>
+        <oj-input-date id ="dateCompleted" label-hint="Task Date" value="{{editdate}}" converter="[[dateConverter]]"></oj-input-date>
+        <oj-input-text id = "editTaskId" label-hint="Task Id" value="{{edittaskID}}" style="display: none;">
+        </oj-input-text>
+        </oj-form-layout>
+    </div>
+  </div>
+<!--edit end-->
+
+
+<!-- add start-->
+<div class="demo-page" id="adddiv" style="display: none;">
+    <h4>Task Detail</h4>
+    <oj-toolbar chroming="outlined">
+      <oj-button id="button" on-click="[[goBackFromAdd]]" class="oj-button-lg">
+          <span slot="startIcon" class="oj-fwk-icon-caret-start oj-fwk-icon"></span>Back
+      </oj-button>
+        <oj-button id="addButton" class="oj-button-lg" on-oj-action="[[addItem]]">Add</oj-button>
+        <oj-button id="cancelButton" class="oj-button-lg" on-oj-action="[[goBackFromAdd]]">Cancel</oj-button>
+        </oj-toolbar>
+  
+    <div class="demo-panel">
+      
+        <oj-form-layout id="taskform" max-columns="2">        
+            <oj-input-text id = "editTaskName" label-hint="Task Description" value="{{addtaskName}}"
+            length.max="40"
+            length.count-by="codeUnit"
+            label-hint="Max 40 char allowed"
+            label-edge="inside"></oj-input-text>
+            <oj-input-date id ="dateCompleted" label-hint="Task Date" value="{{adddate}}" converter="[[dateConverter]]">                
+            </oj-input-date>            
+            </oj-input-text>
+            </oj-form-layout>
+    </div>
+  </div>
+  <!--add end-->
+
+
+
+
+  <oj-messages
+  id="oj-messages-id"
+  class="oj-color-invert"
+  messages="[[messagesDataprovider]]"
+  display="notification"
+  display-options.category="none"
+  position='{"my":{"vertical" :"top", "horizontal": "end"}, 
+                        "at": {"vertical": "top", "horizontal": "end"},
+                        "of": "window   "}'></oj-messages>

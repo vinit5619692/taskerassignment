@@ -1,0 +1,93 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.11'
+    implementation group: 'io.dropwizard', name: 'dropwizard-core', version: '1.1.0'
+    implementation group: 'io.dropwizard', name: 'dropwizard-hibernate', version: '2.1.0'
+    implementation group: 'io.dropwizard', name: 'dropwizard-db', version: '1.0.6' //no 1.1.0
+    implementation group: 'dom4j', name: 'dom4j', version: '1.6.1'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.29'
+    implementation 'com.wordnik:swagger-annotations:1.5.3-M1'
+
+}
+
+
+
+
+
+allprojects {
+    apply plugin: 'idea'
+    group = 'com.vinit5619692.tasker'
+
+}
+
+mainClassName = 'com.vinit5619692.tasker.ApplicationRunner'
+
+run {
+    args 'server', 'config.yaml'
+}
+
+
+
+jar {
+    manifest.attributes("Main-Class": mainClassName)
+}
+
+buildscript {
+    repositories {
+        maven {
+            name 'Gradle Shadow'
+            url 'https://plugins.gradle.org/m2/'
+            allowInsecureProtocol = true //add this line
+        }
+        maven { url 'http://repo1.maven.org/maven2'
+            allowInsecureProtocol = true //add this line
+        }
+        // maven { url "https://maven.fabric.io/public" }
+        maven {
+            url "https://jitpack.io"
+            allowInsecureProtocol = true //add this line
+        }
+        maven {
+            url "https://raw.github.com/Raizlabs/maven-releases/master/releases"
+            allowInsecureProtocol = true //add this line
+        }
+        maven {
+            url "http://oss.sonatype.org/content/repositories/snapshots"
+            allowInsecureProtocol = true //add this line
+        }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+            allowInsecureProtocol = true //add this line
+        }
+        maven {
+            url "https://maven.google.com"
+            allowInsecureProtocol = true //add this line
+        }
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.github.jengelman.gradle.plugins:shadow:7.0.0'
+    }
+}
+
+shadowJar {
+    zip64  = true
+    mergeServiceFiles()
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/*.RSA'
+    exclude 'META-INF/*.SF'
+
+}

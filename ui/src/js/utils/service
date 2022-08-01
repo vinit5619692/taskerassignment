@@ -1,0 +1,22 @@
+define(['text!/../../json/config.json'],function(configFile){
+    const config = JSON.parse(configFile);
+class Service{
+    constructor(){}
+    buildEndpointURL(endpoint,pathParam = null){
+        let url = null;
+
+        if(!endpoint)
+            return null;
+
+        if(!pathParam ){
+            url = `http://${config.host}:${config.port}/${config.endpoint[endpoint]}`;
+        }else if(pathParam ){
+            url = `http://${config.host}:${config.port}/${config.endpoint[endpoint]}/${pathParam}`;
+        }
+
+        return url;
+    }
+    
+}
+return new Service();
+});
