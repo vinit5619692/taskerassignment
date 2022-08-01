@@ -1,0 +1,269 @@
+[1659377884.206][INFO]: Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 17100
+[1659377884.207][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1659377885.146][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Singapore assignment\\taskeruitesting\\build\\downloads\\1659377882263_21656_15",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Singapore assignment\\taskeruitesting\\build\\downloads\\1659377882263_21656_15",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1659377885.151][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Singapore assignment\\taskeruitesting\\build\\downloads\\1659377882263_21656_15"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1659377885.152][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1659377885.155][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\vinit\AppData\Local\Temp\scoped_dir17836_203124459" data:,
+[1659377885.855][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377885.859][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377885.980][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "103.0.5060.134",
+      "chrome": {
+         "chromedriverVersion": "103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262})",
+         "userDataDir": "C:\\Users\\vinit\\AppData\\Local\\Temp\\scoped_dir17836_203124459"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:58695"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "7e3cae9ca97f20fd7fb9d8417d837a42"
+}
+[1659377886.108][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1659377886.108][INFO]: Waiting for pending navigations...
+[1659377886.113][INFO]: Done waiting for pending navigations. Status: ok
+[1659377886.247][INFO]: Waiting for pending navigations...
+[1659377886.248][INFO]: Done waiting for pending navigations. Status: ok
+[1659377886.248][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE SetWindowRect {
+   "height": 738,
+   "width": 1298,
+   "x": 10,
+   "y": 10
+}
+[1659377886.262][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1659377886.262][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE SetTimeouts
+[1659377886.294][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND Navigate {
+   "url": "http://localhost:8000/"
+}
+[1659377886.294][INFO]: Waiting for pending navigations...
+[1659377886.296][INFO]: Done waiting for pending navigations. Status: ok
+[1659377886.361][INFO]: Waiting for pending navigations...
+[1659377886.682][INFO]: Done waiting for pending navigations. Status: ok
+[1659377886.682][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE Navigate
+[1659377886.982][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659377886.982][INFO]: Waiting for pending navigations...
+[1659377886.985][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.009][INFO]: Waiting for pending navigations...
+[1659377887.013][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.013][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#addButtonMain"}
+  (Session info: chrome=103.0.5060.134)
+[1659377887.271][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659377887.271][INFO]: Waiting for pending navigations...
+[1659377887.283][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.370][INFO]: Waiting for pending navigations...
+[1659377887.395][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.395][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#addButtonMain"}
+  (Session info: chrome=103.0.5060.134)
+[1659377887.632][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659377887.632][INFO]: Waiting for pending navigations...
+[1659377887.633][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.643][INFO]: Waiting for pending navigations...
+[1659377887.643][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.643][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#addButtonMain"}
+  (Session info: chrome=103.0.5060.134)
+[1659377887.905][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659377887.905][INFO]: Waiting for pending navigations...
+[1659377887.907][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.924][INFO]: Waiting for pending navigations...
+[1659377887.926][INFO]: Done waiting for pending navigations. Status: ok
+[1659377887.926][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#addButtonMain"}
+  (Session info: chrome=103.0.5060.134)
+[1659377888.157][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659377888.157][INFO]: Waiting for pending navigations...
+[1659377888.275][INFO]: Done waiting for pending navigations. Status: ok
+[1659377888.295][INFO]: Waiting for pending navigations...
+[1659377888.305][INFO]: Done waiting for pending navigations. Status: ok
+[1659377888.305][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#addButtonMain"}
+  (Session info: chrome=103.0.5060.134)
+[1659377888.543][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659377888.543][INFO]: Waiting for pending navigations...
+[1659377888.598][INFO]: Done waiting for pending navigations. Status: ok
+[1659377888.622][INFO]: Waiting for pending navigations...
+[1659377888.637][INFO]: Done waiting for pending navigations. Status: ok
+[1659377888.637][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "ac0aaf92-e94c-4dc0-b6f7-a32da708fcd4"
+}
+[1659377888.664][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND TypeElement {
+   "id": "ac0aaf92-e94c-4dc0-b6f7-a32da708fcd4",
+   "text": "",
+   "value": [ "" ]
+}
+[1659377888.664][INFO]: Waiting for pending navigations...
+[1659377888.665][INFO]: Done waiting for pending navigations. Status: ok
+[1659377888.720][INFO]: Waiting for pending navigations...
+[1659377888.721][INFO]: Done waiting for pending navigations. Status: ok
+[1659377888.721][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE TypeElement
+[1659377908.609][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#removeButton"
+}
+[1659377908.610][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377912.622][WARNING]: Timed out connecting to Chrome, retrying...
+[1659377912.624][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377920.811][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE FindElement ERROR chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+[1659377921.053][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1659377921.054][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377925.061][WARNING]: Timed out connecting to Chrome, retrying...
+[1659377925.062][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377933.242][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE ExecuteScript ERROR chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+[1659377933.265][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND Screenshot {
+}
+[1659377933.266][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377937.274][WARNING]: Timed out connecting to Chrome, retrying...
+[1659377937.275][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659377945.429][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE Screenshot ERROR chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+[1659377945.707][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] COMMAND Quit {
+}
+[1659377945.708][INFO]: [7e3cae9ca97f20fd7fb9d8417d837a42] RESPONSE Quit

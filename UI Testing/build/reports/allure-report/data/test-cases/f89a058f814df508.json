@@ -1,0 +1,57 @@
+{
+  "uid" : "f89a058f814df508",
+  "name" : "deleteTask()",
+  "fullName" : "com.vinit5619692.taskeruitesting.MainSelenideTest.deleteTask",
+  "historyId" : "b50ba0963112d53686e741e1898bdd0b",
+  "time" : {
+    "start" : 1659379946446,
+    "stop" : 1659379948398,
+    "duration" : 1952
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-VHF655DA"
+  }, {
+    "name" : "thread",
+    "value" : "28028@LAPTOP-VHF655DA.Test worker(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.vinit5619692.taskeruitesting.MainSelenideTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.vinit5619692.taskeruitesting.MainSelenideTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deleteTask"
+  }, {
+    "name" : "suite",
+    "value" : "com.vinit5619692.taskeruitesting.MainSelenideTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f89a058f814df508.json",
+  "parameterValues" : [ ]
+}

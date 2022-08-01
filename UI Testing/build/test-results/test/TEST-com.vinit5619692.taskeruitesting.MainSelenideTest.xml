@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.vinit5619692.taskeruitesting.MainSelenideTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-08-01T18:52:09" hostname="LAPTOP-VHF655DA" time="18.513">
+  <properties/>
+  <testcase name="createTask()" classname="com.vinit5619692.taskeruitesting.MainSelenideTest" time="13.812"/>
+  <testcase name="editTask()" classname="com.vinit5619692.taskeruitesting.MainSelenideTest" time="2.732"/>
+  <testcase name="deleteTask()" classname="com.vinit5619692.taskeruitesting.MainSelenideTest" time="1.957"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 12 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\taskerassignmentgit\UI Testing\build\downloads\1659379930075_28028_12
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 103.0.5060.134 (resolved driver for Chrome 103)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vinit\.cache\selenium\chromedriver\win32\103.0.5060.134\chromedriver.exe
+[Test worker] INFO com.codeborne.selenide.webdriver.AbstractDriverFactory - Write webdriver logs to: C:\taskerassignmentgit\UI Testing\build\reports\tests\webdriver.1659379932488_28028_12.log
+Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 29309
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 02, 2022 12:22:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=103.0.5060.134 Platform=WINDOWS
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.15.1
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 12: ChromeDriver -> ChromeDriver: chrome on WINDOWS (55e930b6796d3aa153af74ec0344a818)
+]]></system-err>
+</testsuite>

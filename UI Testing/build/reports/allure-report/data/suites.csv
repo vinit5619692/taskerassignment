@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Aug 02 00:22:09 IST 2022","Tue Aug 02 00:22:23 IST 2022","13446","","com.vinit5619692.taskeruitesting.MainSelenideTest","","com.vinit5619692.taskeruitesting.MainSelenideTest","createTask","createTask()",""
+"passed","Tue Aug 02 00:22:26 IST 2022","Tue Aug 02 00:22:28 IST 2022","1952","","com.vinit5619692.taskeruitesting.MainSelenideTest","","com.vinit5619692.taskeruitesting.MainSelenideTest","deleteTask","deleteTask()",""
+"passed","Tue Aug 02 00:22:23 IST 2022","Tue Aug 02 00:22:26 IST 2022","2727","","com.vinit5619692.taskeruitesting.MainSelenideTest","","com.vinit5619692.taskeruitesting.MainSelenideTest","editTask","editTask()",""

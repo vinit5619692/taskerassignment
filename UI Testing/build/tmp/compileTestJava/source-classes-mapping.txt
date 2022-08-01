@@ -1,0 +1,2 @@
+com/vinit5619692/taskeruitesting/MainSelenideTest.java
+ com.vinit5619692.taskeruitesting.MainSelenideTest

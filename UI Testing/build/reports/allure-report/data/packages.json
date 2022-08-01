@@ -1,0 +1,48 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.vinit5619692.taskeruitesting.MainSelenideTest",
+    "children" : [ {
+      "name" : "createTask",
+      "uid" : "6c7bfe6a2c82c950",
+      "parentUid" : "af7185ee368af5f9f14e6070b7499375",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659379929890,
+        "stop" : 1659379943336,
+        "duration" : 13446
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "editTask",
+      "uid" : "9ccfd92060420ceb",
+      "parentUid" : "af7185ee368af5f9f14e6070b7499375",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659379943709,
+        "stop" : 1659379946436,
+        "duration" : 2727
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "deleteTask",
+      "uid" : "f89a058f814df508",
+      "parentUid" : "af7185ee368af5f9f14e6070b7499375",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659379946446,
+        "stop" : 1659379948398,
+        "duration" : 1952
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.vinit5619692.taskeruitesting.MainSelenideTest"
+  } ]
+}

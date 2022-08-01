@@ -1,0 +1,440 @@
+[1659379417.582][INFO]: Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 23163
+[1659379417.582][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1659379418.439][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Singapore assignment\\taskeruitesting\\build\\downloads\\1659379416681_28856_12",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Singapore assignment\\taskeruitesting\\build\\downloads\\1659379416681_28856_12",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1659379418.444][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Singapore assignment\\taskeruitesting\\build\\downloads\\1659379416681_28856_12"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1659379418.445][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1659379418.448][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\vinit\AppData\Local\Temp\scoped_dir21408_343096583" data:,
+[1659379419.018][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659379419.022][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1659379419.157][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "103.0.5060.134",
+      "chrome": {
+         "chromedriverVersion": "103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262})",
+         "userDataDir": "C:\\Users\\vinit\\AppData\\Local\\Temp\\scoped_dir21408_343096583"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:61407"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "bedba6f66d2618b01d8a1f0b49c7fc3d"
+}
+[1659379419.270][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1659379419.270][INFO]: Waiting for pending navigations...
+[1659379419.278][INFO]: Done waiting for pending navigations. Status: ok
+[1659379419.394][INFO]: Waiting for pending navigations...
+[1659379419.395][INFO]: Done waiting for pending navigations. Status: ok
+[1659379419.395][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE SetWindowRect {
+   "height": 738,
+   "width": 1298,
+   "x": 10,
+   "y": 10
+}
+[1659379419.409][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1659379419.409][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE SetTimeouts
+[1659379419.442][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND Navigate {
+   "url": "http://localhost:8000/"
+}
+[1659379419.442][INFO]: Waiting for pending navigations...
+[1659379419.447][INFO]: Done waiting for pending navigations. Status: ok
+[1659379419.516][INFO]: Waiting for pending navigations...
+[1659379419.797][INFO]: Done waiting for pending navigations. Status: ok
+[1659379419.797][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE Navigate
+[1659379419.965][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659379419.965][INFO]: Waiting for pending navigations...
+[1659379419.972][INFO]: Done waiting for pending navigations. Status: ok
+[1659379419.995][INFO]: Waiting for pending navigations...
+[1659379420.002][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.002][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#addButtonMain"}
+  (Session info: chrome=103.0.5060.134)
+[1659379420.242][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659379420.242][INFO]: Waiting for pending navigations...
+[1659379420.247][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.271][INFO]: Waiting for pending navigations...
+[1659379420.280][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.280][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#addButtonMain"}
+  (Session info: chrome=103.0.5060.134)
+[1659379420.504][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addButtonMain"
+}
+[1659379420.504][INFO]: Waiting for pending navigations...
+[1659379420.505][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.510][INFO]: Waiting for pending navigations...
+[1659379420.511][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.511][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "341f4a81-1c28-4255-9ea8-d19dc1496eca"
+}
+[1659379420.535][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND TypeElement {
+   "id": "341f4a81-1c28-4255-9ea8-d19dc1496eca",
+   "text": "",
+   "value": [ "" ]
+}
+[1659379420.535][INFO]: Waiting for pending navigations...
+[1659379420.536][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.607][INFO]: Waiting for pending navigations...
+[1659379420.609][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.609][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE TypeElement
+[1659379420.626][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND GetActiveElement {
+}
+[1659379420.626][INFO]: Waiting for pending navigations...
+[1659379420.627][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.629][INFO]: Waiting for pending navigations...
+[1659379420.630][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.630][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE GetActiveElement {
+   "element-6066-11e4-a52e-4f735466cecf": "8b898ac4-8628-4e21-b161-b45d8a85e277"
+}
+[1659379420.646][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND TypeElement {
+   "id": "8b898ac4-8628-4e21-b161-b45d8a85e277",
+   "text": "",
+   "value": [ "" ]
+}
+[1659379420.646][INFO]: Waiting for pending navigations...
+[1659379420.647][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.717][INFO]: Waiting for pending navigations...
+[1659379420.727][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.728][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE TypeElement
+[1659379420.737][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editTaskName"
+}
+[1659379420.737][INFO]: Waiting for pending navigations...
+[1659379420.738][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.753][INFO]: Waiting for pending navigations...
+[1659379420.754][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.754][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "a780a936-565a-4d03-8dc7-7249d13ab1ad"
+}
+[1659379420.768][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND TypeElement {
+   "id": "a780a936-565a-4d03-8dc7-7249d13ab1ad",
+   "text": "autoUpdated",
+   "value": [ "a", "u", "t", "o", "U", "p", "d", "a", "t", "e", "d" ]
+}
+[1659379420.768][INFO]: Waiting for pending navigations...
+[1659379420.769][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.842][INFO]: Waiting for pending navigations...
+[1659379420.850][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.850][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE TypeElement
+[1659379420.937][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379420.937][INFO]: Waiting for pending navigations...
+[1659379420.939][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.950][INFO]: Waiting for pending navigations...
+[1659379420.950][INFO]: Done waiting for pending navigations. Status: ok
+[1659379420.950][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379421.184][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379421.184][INFO]: Waiting for pending navigations...
+[1659379421.186][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.193][INFO]: Waiting for pending navigations...
+[1659379421.194][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.194][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379421.421][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379421.421][INFO]: Waiting for pending navigations...
+[1659379421.422][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.432][INFO]: Waiting for pending navigations...
+[1659379421.433][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.433][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379421.654][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379421.654][INFO]: Waiting for pending navigations...
+[1659379421.656][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.665][INFO]: Waiting for pending navigations...
+[1659379421.667][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.667][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379421.903][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379421.903][INFO]: Waiting for pending navigations...
+[1659379421.906][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.914][INFO]: Waiting for pending navigations...
+[1659379421.915][INFO]: Done waiting for pending navigations. Status: ok
+[1659379421.915][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379422.150][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379422.150][INFO]: Waiting for pending navigations...
+[1659379422.150][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.156][INFO]: Waiting for pending navigations...
+[1659379422.156][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.157][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379422.381][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379422.381][INFO]: Waiting for pending navigations...
+[1659379422.382][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.389][INFO]: Waiting for pending navigations...
+[1659379422.389][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.389][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379422.613][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379422.613][INFO]: Waiting for pending navigations...
+[1659379422.614][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.622][INFO]: Waiting for pending navigations...
+[1659379422.624][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.624][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379422.858][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379422.858][INFO]: Waiting for pending navigations...
+[1659379422.859][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.866][INFO]: Waiting for pending navigations...
+[1659379422.868][INFO]: Done waiting for pending navigations. Status: ok
+[1659379422.868][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379423.090][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379423.090][INFO]: Waiting for pending navigations...
+[1659379423.092][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.100][INFO]: Waiting for pending navigations...
+[1659379423.101][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.101][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379423.321][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379423.321][INFO]: Waiting for pending navigations...
+[1659379423.322][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.328][INFO]: Waiting for pending navigations...
+[1659379423.329][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.329][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379423.552][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379423.552][INFO]: Waiting for pending navigations...
+[1659379423.553][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.558][INFO]: Waiting for pending navigations...
+[1659379423.559][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.559][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379423.786][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379423.786][INFO]: Waiting for pending navigations...
+[1659379423.789][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.812][INFO]: Waiting for pending navigations...
+[1659379423.813][INFO]: Done waiting for pending navigations. Status: ok
+[1659379423.813][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379424.045][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379424.045][INFO]: Waiting for pending navigations...
+[1659379424.046][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.054][INFO]: Waiting for pending navigations...
+[1659379424.056][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.056][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379424.276][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379424.276][INFO]: Waiting for pending navigations...
+[1659379424.277][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.284][INFO]: Waiting for pending navigations...
+[1659379424.285][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.285][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379424.507][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379424.507][INFO]: Waiting for pending navigations...
+[1659379424.508][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.515][INFO]: Waiting for pending navigations...
+[1659379424.516][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.516][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379424.740][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#editButton"
+}
+[1659379424.741][INFO]: Waiting for pending navigations...
+[1659379424.742][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.750][INFO]: Waiting for pending navigations...
+[1659379424.751][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.751][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#editButton"}
+  (Session info: chrome=103.0.5060.134)
+[1659379424.973][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1659379424.973][INFO]: Waiting for pending navigations...
+[1659379424.974][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.984][INFO]: Waiting for pending navigations...
+[1659379424.985][INFO]: Done waiting for pending navigations. Status: ok
+[1659379424.985][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE ExecuteScript "\u003Chtml lang=\"en-us\" class=\"oj-agent-os-windows oj-agent-browser-chrome\">\u003Chead>\n    \u003Ctitle>Oracle JET Starter Template - Web Nav Bar\u003C/title>\n\n    \u003Cmeta charset=\"UTF-8\">\n    \u003Cmeta name=\"viewport\" cont..."
+[1659379425.003][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND Screenshot {
+}
+[1659379425.003][INFO]: Waiting for pending navigations...
+[1659379425.005][INFO]: Done waiting for pending navigations. Status: ok
+[1659379425.207][INFO]: Waiting for pending navigations...
+[1659379425.208][INFO]: Done waiting for pending navigations. Status: ok
+[1659379425.208][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAAB4UAAAPPCAYAAADDyh0oAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XuU1/V9J/5nuqbUTU+GjWZcTeViI5r+GBkEog0zOxCxVjCIENN4q4MkVdQU0KxG05XBbTS4UYduItqIjNWoreEiAawV45AZcpQRIc5sqmARsDF1jOlM22zKL..."
+[1659379425.591][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] COMMAND Quit {
+}
+[1659379425.703][INFO]: [bedba6f66d2618b01d8a1f0b49c7fc3d] RESPONSE Quit
