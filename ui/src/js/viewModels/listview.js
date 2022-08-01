@@ -90,7 +90,7 @@ define(["ojs/ojconverterutils-i18n",'services/listviewService',"require", "expor
                             severity: 'info',
                             summary: 'Task description and Task date, both are mandatory',
                             //detail: 'Message timeout set to:' ,
-                            autoTimeout: 5000
+                            autoTimeout: 30000
                         }
                     ]))
                     return;
@@ -128,7 +128,9 @@ define(["ojs/ojconverterutils-i18n",'services/listviewService',"require", "expor
                 this.refreshFunc = () => new Promise((resolve, reject) => {
                     // this timeout is just to simulate a delay so that
                     // the refresh panel does not close immediately
+
                     setTimeout(() => {
+                        this.getAllTasks();
                         resolve();
                     }, 2000);
                     () => {
@@ -156,7 +158,7 @@ define(["ojs/ojconverterutils-i18n",'services/listviewService',"require", "expor
                             severity: 'info',
                             summary: 'Task description and Task date, both are mandatory',
                             //detail: 'Message timeout set to:' ,
-                            autoTimeout: 5000
+                            autoTimeout: 30000
                         }
                     ]))
                     return;
@@ -234,7 +236,7 @@ define(["ojs/ojconverterutils-i18n",'services/listviewService',"require", "expor
                         severity: 'info',
                         summary: 'Task Deleted',
                         //detail: 'Message timeout set to:' ,
-                        autoTimeout: 5000
+                        autoTimeout: 30000
                     }
                 ]))
                 this.getAllTasks();
@@ -250,7 +252,7 @@ define(["ojs/ojconverterutils-i18n",'services/listviewService',"require", "expor
                         severity: 'info',
                         summary: method === 'c'?'Task Created':'Task Updated',
                         //detail: 'Message timeout set to:' ,
-                        autoTimeout: 5000
+                        autoTimeout: 30000
                     }
                 ]));
                 else
@@ -259,7 +261,7 @@ define(["ojs/ojconverterutils-i18n",'services/listviewService',"require", "expor
                         severity: 'info',
                         summary: 'Failed',
                         detail: response.message ,
-                        autoTimeout: 5000
+                        autoTimeout: 30000
                     }
                 ]));
                 this.getAllTasks();

@@ -1,7 +1,7 @@
 <div class="demo-page oj-bg-body" id="listviewdiv" style="display: block;">
     <div id="buttonset-container"  class="oj-flex-bar">
         <oj-toolbar>
-                <oj-button id="addButton" :class="[[isSmall()? 'oj-button-sm oj-flex-bar-start': 'oj-button-lg oj-flex-bar-start']]" chroming="outlined" on-oj-action="[[addNewItem]]" label="[[isSmall()? 'Create': 'Create New Task']]">
+                <oj-button id="addButtonMain" :class="[[isSmall()? 'oj-button-sm oj-flex-bar-start': 'oj-button-lg oj-flex-bar-start']]" chroming="outlined" on-oj-action="[[addNewItem]]" label="[[isSmall()? 'Create': 'Create New Task']]">
                 </oj-button>               
         </oj-toolbar> 
     </div> 
@@ -63,7 +63,7 @@
         length.count-by="codeUnit"
         label-hint="Max 40 char allowed"
         label-edge="inside"></oj-input-text>
-        <oj-input-date id ="dateCompleted" label-hint="Task Date" value="{{editdate}}" converter="[[dateConverter]]"></oj-input-date>
+        <oj-input-date id ="editdateCompleted" label-hint="Task Date" value="{{editdate}}" converter="[[dateConverter]]"></oj-input-date>
         <oj-input-text id = "editTaskId" label-hint="Task Id" value="{{edittaskID}}" style="display: none;">
         </oj-input-text>
         </oj-form-layout>
@@ -86,12 +86,12 @@
     <div class="demo-panel">
       
         <oj-form-layout id="taskform" max-columns="2">        
-            <oj-input-text id = "editTaskName" label-hint="Task Description" value="{{addtaskName}}"
+            <oj-input-text id = "addTaskName" label-hint="Task Description" value="{{addtaskName}}"
             length.max="40"
             length.count-by="codeUnit"
             label-hint="Max 40 char allowed"
             label-edge="inside"></oj-input-text>
-            <oj-input-date id ="dateCompleted" label-hint="Task Date" value="{{adddate}}" converter="[[dateConverter]]">                
+            <oj-input-date id ="addDateCompleted" label-hint="Task Date" value="{{adddate}}" converter="[[dateConverter]]">                
             </oj-input-date>            
             </oj-input-text>
             </oj-form-layout>
