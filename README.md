@@ -42,7 +42,13 @@ To start using this project use the following steps:
 4. Open `cmd` prompt in the parent directory of the application and run `docker compose up -d`.
 5. Now application should be running on `localhost:7001`.
 
-TO maintain the application, do the changes and execute step 2 to 4. 
+# Maintaining the application
+There are 5 parts where maintenances could be required in the application 
+1. Database - To do any changes in this `./db/Dockerfile`.
+2. Service - Build the service project again, after changes, and follow steps 2 and 4 from `Steps to spin up the application locally` above.
+3. UI - After changes in the file, follow steps 3 and 4 from `Steps to spin up the application locally` above.
+4. TO make any changes in `Dockerfile`, visit respective services folder (db, service, ui).
+5. To do changes in deployment parameters look for `docker-compose.yml` in parent directory.
 
 # Testing 
 
