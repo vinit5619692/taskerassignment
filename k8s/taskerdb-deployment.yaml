@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: taskerdb-deployment
+
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component:  taskerdb
+    spec:
+      volumes:
+        - name: taskerdb-storage
+          persistentVolumeClaim:
+            claimName: db-pvc
+      containers:
+        - name: taskerdb-container
+          image: vinit5619692/taskerdb:v1
+          ports:
+            - containerPort:  3066
+          volumeMounts:
+            - name: taskerdb-storage
+              mountPath: /var/lib/mysql
+              subPath: mysql
+  selector:
+    matchLabels:
+      component:  taskerdb

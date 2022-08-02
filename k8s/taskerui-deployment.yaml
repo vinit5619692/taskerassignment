@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: taskerui-deployment
+
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        component:  taskerui
+    spec:
+      containers:
+        - name: taskerui-container
+          image: vinit5619692/taskerui:v1
+          ports:
+            - containerPort:  80
+  selector:
+    matchLabels:
+      component:  taskerui

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: taskerdb-service
+spec:
+  selector:
+    component: taskerdb
+  type: ClusterIP
+  ports:
+    - port:  3306
+      targetPort: 3306

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: taskerui-service
+spec:
+  selector:
+    component: taskerui
+  type: ClusterIP
+  ports:
+    - port:  80
+      targetPort: 80

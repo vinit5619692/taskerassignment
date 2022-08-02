@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: taskerservice-deployment
+
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component:  taskerservice
+    spec:
+      containers:
+        - name: taskerservice-container
+          image: vinit5619692/taskerservice:v1
+          ports:
+            - containerPort:  7000
+  selector:
+    matchLabels:
+      component:  taskerservice
