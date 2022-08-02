@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 
 public class MainSelenideTest {
 
-    private static final String APP_URL="http://localhost:8000/";
+    private static final String APP_URL="http://localhost:7001/";
 
     @BeforeAll
     static void beforeAll(){
