@@ -1,6 +1,6 @@
 
 ## Authors
-- [Vinit Agarwal](https://github.com/vinit5619692)
+[Vinit Agarwal](https://github.com/vinit5619692)
 
 # Tasker
 
