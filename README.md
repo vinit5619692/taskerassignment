@@ -17,11 +17,23 @@ Entire project is committed at [github](https://github.com/vinit5619692/taskeras
 
 Docker is configured to containerize all the tiers, which makes it easy to run entire application anywhere.
 
+## Prerequisite softwares
+1. Docker.
+2. Intellij(or any other IDE).
+3. ojet([how to install](https://docs.oracle.com/en/learn/jet-install-cli/index.html#task-3-verify-the-oracle-jet-command-line-interface)).
+
 ## Steps to spin up the application locally
 1. Clone the repo in you local disk `git clone https://github.com/vinit5619692/taskerassignment.git`.
-2. Build server side ([Endpoints](https://github.com/vinit5619692/taskerassignment/tree/main/service)) 
-    - Open Intellij(or any other IDE)
-    - Import project as gradle
+2. Build server side ([Endpoints](https://github.com/vinit5619692/taskerassignment/tree/main/service)).
+    - Open Intellij(or any other IDE).
+    - Import project as gradle.
+    - Build the project.
+3. Build [UI](https://github.com/vinit5619692/taskerassignment/tree/main/ui)
+    - Go to "ui" folder location.
+    - Open `cmd` prompt
+    - Run `ojet restore`
+    - Run `ojet build`
+
 
 
 
