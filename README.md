@@ -26,6 +26,7 @@ To spin up this project locally, these are the prerequisite software
 1. Docker.
 2. Intellij (or any other IDE).
 3. ojet ([how to install](https://docs.oracle.com/en/learn/jet-install-cli/index.html#task-3-verify-the-oracle-jet-command-line-interface)).
+4. Postman (For executing endpoints test suit).
 
 ## Steps to spin up the application locally
 To start using this project use the following steps:
@@ -53,16 +54,18 @@ There are 5 parts where maintenances could be required in the application
 # Testing 
 
 ## Endpoint testing
-For endpoint testing I have used postman.
-### Steps to execute test suit
+Postman is used for endpoint testing.
+### Steps to execute endpoint test suit
 To test all the endpoints.
 1. Import both positive and negative collection along with environment variable [collection](https://github.com/vinit5619692/taskerassignment/tree/main/postman%20collection) into Postman application.
 3. Execute `run collection`.
 
-### Steps to execute UI 
+## UI testing
+Selenide is used for component/pages testing.
+### Steps to execute UI test suit
 To test UI components/pages.
 1. Open Intellij (or any other IDE).
 2. Import project (from "UI Testing" folder) as Gradle.
-3. Go to "MainSelenideTest.java".
+3. Go to "MainSelenideTest.java" (Change APP_URL variable in the class, if needed).
 4. Execute All or selected test.
 
