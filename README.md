@@ -1,5 +1,5 @@
 
-## Authors
+## Author
 [Vinit Agarwal](https://github.com/vinit5619692)
 
 # Tasker
@@ -40,7 +40,7 @@ To start using this project use the following steps:
     - Run `ojet restore`
     - Run `ojet build`
 4. Open `cmd` prompt in the parent directory of the application and run `docker compose up -d`.
-5. Application must be running on `localhost:7001`.
+5. Now application should be running on `localhost:7001`.
 
 TO maintain the application, do the changes and execute step 2 to 4. 
 
