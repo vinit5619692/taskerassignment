@@ -17,7 +17,7 @@ spec:
             claimName: db-pvc
       containers:
         - name: taskerdb-container
-          image: vinit5619692/taskerdb:v1
+          image: vinit5619692/taskerdb:v3
           ports:
             - containerPort:  3066
           volumeMounts:

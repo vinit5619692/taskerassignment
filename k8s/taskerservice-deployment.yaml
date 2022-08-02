@@ -13,9 +13,9 @@ spec:
     spec:
       containers:
         - name: taskerservice-container
-          image: vinit5619692/taskerservice:v2
+          image: vinit5619692/taskerservice:v3
           ports:
-            - containerPort:  7000
+            - containerPort:  9000
   selector:
     matchLabels:
       component:  taskerservice

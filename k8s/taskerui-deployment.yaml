@@ -13,9 +13,9 @@ spec:
     spec:
       containers:
         - name: taskerui-container
-          image: vinit5619692/taskerui:v1
+          image: vinit5619692/taskerui:v3
           ports:
-            - containerPort:  80
+            - containerPort:  8080
   selector:
     matchLabels:
       component:  taskerui

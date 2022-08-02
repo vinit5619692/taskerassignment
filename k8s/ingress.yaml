@@ -12,5 +12,5 @@ spec:
               service:
                 name: taskerui-service
                 port:
-                  number: 80
+                  number: 8080
 
