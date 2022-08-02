@@ -2,10 +2,28 @@
 
 This(Tasker) is web application to maintain and track tasks.
 User can do Create, Read, Update and Delete on task using responsive application.
-Screenshot of pages, from the application, are avaiable [here]() 
+Screenshot of pages, from the application, are avaiable [here](https://github.com/vinit5619692/taskerassignment/tree/main/screenshot).
+Entire project is committed at [github](https://github.com/vinit5619692/taskerassignment).
 
 
-# About update and backward compatibility
+# Tiers of Application
+
+1> Presentation tier - UI is powered using OJET 11.
+2> Application tier - Endpoints are created with DropWizard framework.
+3> Data tier - MySQL is used to persist data.
+
+
+# How to start locally
+
+Docker is configured to containerize all the tiers, which makes it easy to run entire application anywhere.
+
+## Steps to spin up the application locally
+1> Clone the repo in you local disk `git clone https://github.com/vinit5619692/taskerassignment.git`.
+2> Build server side ([Endpoints](https://github.com/vinit5619692/taskerassignment/tree/main/service)) 
+    - Open Intellij(or any other IDE)
+    - Import project as gradle
+
+
 
 # Where to get Docker Compose
 
